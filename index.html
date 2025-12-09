@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SP Solution - Professional CCTV installation, surveillance systems, and smart security solutions for homes and businesses.">
+    <title>SP Solution | Smart Security for Every Home & Business</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons (using standard unpkg for feather icons or similar for now, or SVG directly) -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div class="parallax-bg" id="parallax-bg"></div>
+
+    <!-- 3D Animation Container -->
+    <div class="animation-overlay">
+        <img src="assets/cctv-3d.png" alt="3D CCTV" class="cctv-model">
+        <img src="assets/shield-3d.png" alt="Security Shield" class="security-shield">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="SP Solution" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1>Smart Security for <br>Every <span class="highlight">Home & Business</span></h1>
+            <p>Professional CCTV installation, advanced surveillance systems, and modern security technology designed to
+                keep you safe 24/7.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn-primary">Explore Solutions</a>
+                <a href="#contact" class="btn-secondary">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Welcome to SP Solution</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="assets/about-img.png" alt="SP Solution Office">
+                </div>
+                <div class="about-content">
+                    <p>SP Solution is a professional security-technology company specializing in CCTV installation,
+                        surveillance systems, smart security devices and complete security solutions for homes, offices,
+                        shops, industries and commercial spaces.</p>
+                    <p>Our mission is simple: to provide reliable, intelligent and affordable security solutions that
+                        customers can trust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Offer</h2>
+                <p>Comprehensive security solutions tailored to your needs</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="card service-card">
+                    <img src="assets/service-install.png" alt="CCTV Camera Installation" class="service-img">
+                    <h3>CCTV Camera Installation</h3>
+                    <p>We install a full range of cameras including Indoor and Outdoor, Dome & Bullet, PTZ, IP & WiFi,
+                        and Night Vision AI-Enhanced Cameras.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card service-card">
+                    <img src="assets/service-smart.png" alt="Smart Surveillance" class="service-img">
+                    <h3>Smart Surveillance Systems</h3>
+                    <p>Integrate your security with Mobile App Monitoring, Motion Detection, Cloud/NVR Recording, and
+                        Remote Viewing from anywhere.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card service-card">
+                    <img src="assets/service-repair.png" alt="CCTV Repair & Maintenance" class="service-img">
+                    <h3>CCTV Repair & Maintenance</h3>
+                    <p>Full diagnostics, cable checks, DVR/NVR repair, and part replacements to keep your system running
+                        optimally.</p>
+                </div>
+
+                <!-- Service 4 (Original 3, moved) -->
+                <div class="card service-card">
+                    <div class="icon-box" style="display:flex;">
+                        <i data-feather="lock"></i>
+                    </div>
+                    <h3>Access Control & Smart Devices</h3>
+                    <p>Advanced security including Smart Doorbells, Biometric Locks, Smart Alarms, and Security Sensors.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose SP Solution?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="check-icon"><i data-feather="check-circle"></i></div>
+                    <div class="feature-text">
+                        <h4>Professional Installation</h4>
+                        <p>Experienced technicians ensure clean, accurate, and safe wiring and setup.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="check-icon"><i data-feather="check-circle"></i></div>
+                    <div class="feature-text">
+                        <h4>High-quality Products</h4>
+                        <p>Trusted brands and advanced technology for crystal-clear video.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="check-icon"><i data-feather="check-circle"></i></div>
+                    <div class="feature-text">
+                        <h4>24/7 Support & Maintenance</h4>
+                        <p>Call-out service, technical support, and warranty handling.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="check-icon"><i data-feather="check-circle"></i></div>
+                    <div class="feature-text">
+                        <h4>Affordable Packages</h4>
+                        <p>Custom solutions for homes, shops, and large businesses.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="check-icon"><i data-feather="check-circle"></i></div>
+                    <div class="feature-text">
+                        <h4>Smart App Monitoring</h4>
+                        <p>Monitor your cameras from your smartphone anytime, anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="section vision">
+        <div class="container vision-container">
+            <div class="vision-content">
+                <h2>Our Vision</h2>
+                <p>To make advanced security accessible to everyone, ensuring every customer experiences safety,
+                    convenience, and peace of mind through modern surveillance technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get a Free Quote</h2>
+                <p>Ready to secure your property? Contact us today.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i data-feather="map-pin"></i>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>Jaffna, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-feather="mail"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>spsolution@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-feather="phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+94763107707</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo-link">
+                        <img src="assets/logo.png" alt="SP Solution" class="logo-img"
+                            style="height: 50px; margin-bottom: 20px;">
+                    </a>
+                    <p>Securing your world with advanced technology.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1DzQVLtCRn/" target="_blank"><i
+                                data-feather="facebook"></i></a>
+                        <a href="https://www.instagram.com/ni.thu7623?utm_source=qr&igsh=d2txYnBtbzhqOXJ1"
+                            target="_blank"><i data-feather="instagram"></i></a>
+                        <a href="https://wa.me/message/O7LCNKNN3A3DG1" target="_blank">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="feather">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SP Solution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 3D Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
